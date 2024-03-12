@@ -19,13 +19,13 @@ This is main CSS file that contains custom style rules used in this template
 /** Base Styles
 --------------------------------------------------------------*/
 :root {
-  --accent-color: #94CA21;
+  --accent-color: #024572;
   --secondary-color: #79A6DE;
   --dark-color: #222222;
   --white-color: #FFFFFF;
   --body-text-color: #414141;
   --light-text-color: #686868;
-  --link-color: #94CA21;
+  --link-color: #024572;
   --background-color: #F9F9F9;
 }
 
@@ -123,7 +123,7 @@ h5,
 }
 
 .text-primary {
-  color: var(--accent-color) !important;
+  color: #024572;
 }
 
 p {
@@ -495,7 +495,7 @@ section#testimonial {
 @media only screen and (max-width: 768px) {
   .testimonial-icon {
     font-size: 100px;
-    color: var(--accent-color);
+    color: #024572;
   }
 
   .testimonial-paragraph {
@@ -547,11 +547,11 @@ iconify-icon.pricing-lable-icon {
 }
 
 .price-recommend {
-  color: var(--accent-color);
+  color: #024572;
 }
 
 .label-color {
-  color: var(--accent-color);
+  color: #024572;
 }
 
 label#monthly-label,
