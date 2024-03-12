@@ -29,6 +29,38 @@ This is main CSS file that contains custom style rules used in this template
   --background-color: #F9F9F9;
 }
 
+
+    .imagen-responsive {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (max-width: 300px) {
+        .imagen-responsive {
+            max-width: 40%; /* Puedes ajustar este porcentaje según necesites */
+        }
+    }
+
+
+
+    .imagen-responsive2 {
+      max-width: 60%;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  @media (max-width: 60px) {
+      .imagen-responsive2 {
+          max-width: 40%; /* Puedes ajustar este porcentaje según necesites */
+      }
+  }
+
+
 /* Fonts */
 :root {
   --body-font: 'Raleway', sans-serif;
@@ -336,7 +368,7 @@ section#hero {
 
 /*---- search section style start ----*/
 .search-block {
-  background: #FFFFFF;
+  background-image: #FFFFFF;
   border: 1px solid #FAFAFA;
   box-shadow: 0px 12px 90px rgba(12, 12, 12, 0.06);
   border-radius: 9px;
@@ -350,6 +382,8 @@ iconify-icon.search-icons {
   color: #B8B8B8;
   font-size: 20px;
 }
+
+
 
 .label-style {
   color: var(--body-text-color);
