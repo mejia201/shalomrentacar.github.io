@@ -398,9 +398,10 @@ section#hero {
 /* Media query para pantallas más pequeñas (teléfonos) */
 @media screen and (max-width: 576px) {
   .search-block img.background-image {
-    max-width: 100%; /* La imagen ocupará todo el ancho del contenedor en dispositivos móviles */
+    max-width: 130%; /* La imagen ocupará todo el ancho del contenedor en dispositivos móviles */
   }
 }
+
 
 iconify-icon.search-icons {
   color: #B8B8B8;
