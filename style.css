@@ -31,7 +31,7 @@ This is main CSS file that contains custom style rules used in this template
 
 
     .imagen-responsive {
-        max-width: 50%;
+        max-width: 80%;
         height: auto;
         display: block;
         margin-left: auto;
@@ -61,11 +61,39 @@ This is main CSS file that contains custom style rules used in this template
   }
 
 
+  .imagen-responsive3 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 300px) {
+    .imagen-responsive3 {
+        max-width: 40%; 
+    }
+}
+
+@media (min-width: 1200px) { 
+  .imagen-responsive3 {
+      max-width: 100%; 
+  }
+}
+
+/* Estilo para las imágenes dentro de la sección */
+#search img {
+  width: 100%;
+  max-width: calc(100% - 20px); 
+  margin: 0 auto; 
+}
+
+
 
 /* Fonts */
 :root {
   --body-font: 'Raleway', sans-serif;
-  --heading-font: 'Kalam', cursive;
+  --heading-font: 'Roboto', normal;
   --sub-heading-font: 'Raleway', sans-serif;
 }
 
@@ -377,28 +405,28 @@ section#hero {
   overflow: hidden;
   padding: 10px;
   width: 100%;
-  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
-  margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+  margin-top: 20px; 
+  margin-bottom: 20px; 
 }
 
 .search-block img.background-image {
-  width: 100%; /* La imagen ocupará todo el ancho del contenedor */
-  height: auto; /* La altura se ajustará automáticamente */
+  width: 100%; 
+  height: auto; 
   display: block;
-  margin: 0 auto; /* Centra la imagen horizontalmente */
+  margin: 0 auto; 
 }
 
 /* Media query para pantallas más grandes */
 @media screen and (min-width: 768px) {
   .search-block img.background-image {
-    max-width: 50%; /* Reducimos el tamaño de la imagen en pantallas normales */
+    max-width: 50%; 
   }
 }
 
 /* Media query para pantallas más pequeñas (teléfonos) */
 @media screen and (max-width: 576px) {
   .search-block img.background-image {
-    max-width: 130%; /* La imagen ocupará todo el ancho del contenedor en dispositivos móviles */
+    max-width: 130%; 
   }
 }
 
