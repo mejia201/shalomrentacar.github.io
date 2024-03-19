@@ -91,6 +91,19 @@ This is main CSS file that contains custom style rules used in this template
 
 
 
+.vehicle-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #024572; 
+  color: white; 
+  padding: 5px 10px; 
+  border-radius: 10px; /* Bordes redondeados */
+  font-size: 14px; /* Tamaño del texto */
+  z-index: 999; /* Para estar sobre la imagen */
+}
+
+
 /* Fonts */
 :root {
   --body-font: 'Raleway', sans-serif;
