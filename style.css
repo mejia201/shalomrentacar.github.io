@@ -39,7 +39,7 @@ This is main CSS file that contains custom style rules used in this template
 
 
 /* PROCESS SECTION */
-
+/* PROCESS SECTION */
 #process {
   height: 100vh; /* Asegura que la sección cubra toda la altura de la ventana */
   position: relative;
@@ -64,12 +64,7 @@ This is main CSS file that contains custom style rules used in this template
   background: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente para destacar el texto */
   padding: 2rem;
   border-radius: 8px;
-}
-
-#process h2 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  font-weight: 700;
+  max-width: 90%;
 }
 
 #process .bullet {
@@ -94,6 +89,25 @@ This is main CSS file that contains custom style rules used in this template
   margin-top: 0.5rem;
 }
 
+/* Media Queries */
+@media (max-width: 1199px) {
+  #process .container {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  #process .container {
+    padding: 1.5rem;
+  }
+  #process h5 {
+    font-size: 1.1rem;
+  }
+  #process p {
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 767px) {
   #process .row {
       text-align: center;
@@ -102,7 +116,71 @@ This is main CSS file that contains custom style rules used in this template
       margin-bottom: 2rem;
   }
   #process .container {
-      padding: 1rem; 
+      padding: 1rem;
+  }
+  #process h5 {
+      font-size: 1rem;
+  }
+  #process p {
+      font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 575px) {
+  #process .container {
+      padding: 0.75rem;
+  }
+  #process h5 {
+      font-size: 0.9rem;
+  }
+  #process p {
+      font-size: 0.8rem;
+  }
+}
+
+/* Estilos para pantallas aún más pequeñas */
+@media (max-width: 400px) {
+  #process .container {
+      padding: 0.5rem;
+  }
+
+  #process h2 {
+    font-size: 1.25rem; /* Tamaño del título para las pantallas más pequeñas */
+  }
+
+  #process h5 {
+      font-size: 0.8rem;
+      margin-top: 1rem;
+  }
+  #process p {
+      font-size: 0.7rem;
+  }
+  #process .bullet {
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+  }
+}
+
+/* Estilos para pantallas aún más pequeñas */
+@media (max-width: 320px) {
+  #process .container {
+    padding: 0.25rem;
+  }
+  #process h2 {
+    font-size: 1rem; /* Tamaño del título para pantallas ultra pequeñas */
+  }
+  #process h5 {
+    font-size: 0.7rem;
+    margin-top: 0.75rem;
+  }
+  #process p {
+    font-size: 0.6rem;
+  }
+  #process .bullet {
+    width: 8px;
+    height: 8px;
+    margin-right: 4px;
   }
 }
 
