@@ -40,7 +40,7 @@
 
 <body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
 
-    <nav class="navbar navbar-expand-lg  navbar-light container-fluid py-2 position-fixed">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed w-100 py-2">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img src="images/logo-bg.png" alt="logo" width="200"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -58,6 +58,9 @@
                     <ul class="navbar-nav align-items-center justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
                             <a class="nav-link active px-3" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#renquisitos">Requisitos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-3" href="#rental">Vehiculos</a>
@@ -81,87 +84,107 @@
         </div>
     </nav>
 
-    <!-- hero section start  -->
-    <section id="hero" class=" position-relative overflow-hidden mb-5">
-        <div class="pattern-overlay pattern-right position-absolute">
-            <img src="images/hero-pattern-right.png" alt="pattern">
-        </div>
-        <div class="pattern-overlay pattern-left position-absolute">
-            <img src="images/hero-pattern-left.png" alt="pattern">
-        </div>
-        <div class="hero-content container text-center">
-            <div class="row">
-                <div class="detail mb-4">
-                    <h1 class="">Shalom<span class="" style="color:#024572;"> Rent a Car </span> </h1>
-                    <p class="hero-paragraph">El mejor sitio para rentar el vehículo que necesitas. </p>
-                    <img src="images/img-principal.png" class="imagen-responsive justify-content-center">
-                </div>
+ <!-- hero section start  -->
+<section id="hero" class="position-relative overflow-hidden mb-5">
+
+    <div class="hero-content container text-center position-relative z-index-1">
+        <div class="row">
+            <div class="detail mb-4 text-white">
+                <h1 class="">Shalom<span class="" style="color:#024572;"> Rent a Car </span></h1>
+                <p class="hero-paragraph">El mejor sitio para rentar el vehículo que necesitas.</p>
             </div>
         </div>
-    </section>
+    </div>
+    <img src="images/banner01.jpeg" class="w-100 h-100 position-absolute top-0 start-0" alt="Imagen principal" style="object-fit: cover; z-index: 0;">
+</section>
+<!-- hero section end  -->
 
-    
 
-    <!-- search section start -->
-    <section id="search" class="p-5">
-
-    <img src="images/bannerTop.jpeg" class="imagen-responsive3 justify-content-center">
-
-        <h2 class=" text-center">Quienes<span style="color:#024572;"> somos? </span> </h2>
-    
-        <div class="container search-block">
-           
-           
-            <p class="text-center">  Shalom Rent a Car, empresa de renta de vehículos con el propósito de brindar el mejor servicio a 
-                nuestros clientes; donde la amabilidad, responsabilidad, limpieza, calidad y servicios únicos nos destacan.
-                 Siendo una empresa encausada a preservar y cuidar el medio ambiente en cada renta que se realiza, 
-                 sin olvidarnos de la satisfacción y fidelidad de nuestros clientes.</p>
-               
-
+   <!-- search section start -->
+<section id="search" class="p-5">
+    <br>
+    <br>
+    <br>
+    <div class="container text-center">
+        <h2 class="mb-4">¿Quiénes <span style="color:#024572;">somos?</span></h2>
+        <div class="search-block">
+            <p>Shalom Rent a Car, empresa de renta de vehículos con el propósito de brindar el mejor servicio a nuestros clientes; donde la amabilidad, responsabilidad, limpieza, calidad y servicios únicos nos destacan. Siendo una empresa encausada a preservar y cuidar el medio ambiente en cada renta que se realiza, sin olvidarnos de la satisfacción y fidelidad de nuestros clientes.</p>
         </div>
+    </div>
+    <br>
+    <br>
+    <br>
+</section>
+<!-- search section end -->
 
-        <img src="images/bannerButton.jpeg" class="imagen-responsive3 justify-content-center">
-     
-    </section> 
+
+   <br>
+   <br>
+
 
     
 
-    <!-- process section start  -->
-    <section id="process">
-        <div class=" hero-content container text-center my-5" style="justify-content: center;">
-            <img src="images/rentar.jpeg" class="imagen-responsive2 justify-content-center">
-            <h2 class=" text-center my-5 pb-5">Nuestro proceso <span style="color:#024572;"> de alquiler </span> </h2>
-            <hr class="progress-line">
-            <div class="row process-block ms-4">
-                <div class="col-6 col-lg-3 text-start my-4">
-                    <div class="bullet" ></div>
-                    <h5 class="text-uppercase mt-5">Escoge el vehiculo </h5>
-                    <p>Escoge el vehiculo que quieras rentar de nuestro catálogo</p>
-                </div>
-
-                <div class="col-6 col-lg-3 text-start my-4">
+<!-- process section start -->
+<section id="process" class="position-relative">
+    <img src="images/howrental.jpeg" class="img-fluid w-100 h-100 position-absolute" alt="Cómo rentar con nosotros" style="object-fit: cover;">
+    <div class="overlay position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+        <div class="container text-center text-dark bg-white p-5 rounded" style="max-width: 90%; opacity: 0.9;">
+            <h2 class="mb-5">Cómo rentar <span style="color:#024572;">con nosotros</span></h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-3 text-start mb-4">
                     <div class="bullet"></div>
-                    <h5 class="text-uppercase mt-5">Empieza el proceso</h5>
+                    <h5 class="text-uppercase mt-4">Escoge el vehículo</h5>
+                    <p>Escoge el vehículo que quieras rentar de nuestro catálogo.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 text-start mb-4">
+                    <div class="bullet"></div>
+                    <h5 class="text-uppercase mt-4">Empieza el proceso</h5>
                     <p>Da click en la imagen o en "rentar ahora".</p>
                 </div>
-
-                <div class="col-6 col-lg-3 text-start my-4">
+                <div class="col-12 col-md-6 col-lg-3 text-start mb-2">
                     <div class="bullet"></div>
-                    <h5 class="text-uppercase mt-5">Escribenos a whatsapp </h5>
+                    <h5 class="text-uppercase mt-4">Escríbenos a WhatsApp</h5>
                     <p>Ponte en contacto con nosotros.</p>
                 </div>
-
-                <div class="col-6 col-lg-3 text-start my-4">
+                <div class="col-12 col-md-6 col-lg-3 text-start mb-4">
                     <div class="bullet"></div>
-                    <h5 class="text-uppercase mt-5">Termina el proceso </h5>
-                    <p>Recibe las indicaciones necesarias y listo, proceso terminado.</p>
+                    <h5 class="text-uppercase mt-4">Termina el proceso</h5>
+                    <p>Recibirás la información que necesitas con las indicaciones para gestionar la renta; y listo, haz terminado tu proceso.</p>
                 </div>
-
             </div>
-
-
         </div>
-    </section>
+    </div>
+</section>
+<!-- process section end -->
+
+
+
+
+
+<section id="renquisitos">
+    <div class="container py-5 my-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+                <h2 class="mb-4">Requisitos para <span style="color:#024572;">rentar con nosotros</span></h2>
+                <img src="images/how1.jpeg" class="img-fluid" alt="Requisitos para rentar">
+            </div>
+            <div class="col-lg-6">
+                <ul class="list-unstyled rental-list">
+                    <li class="mb-3">DUI para locales, en caso extranjeros pasaporte.</li>
+                    <li class="mb-3">Recibo de agua o luz de domicilio actual.</li>
+                    <li class="mb-3">Licencia vigente con antigüedad de 6 meses o más.</li>
+                    <li class="mb-3">Perfil social.</li>
+                    <li class="mb-3">Depósito varía según el vehículo a rentar.</li>
+                    <li class="mb-3">No te cobramos asistencia 24/7.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+
+
 
     <!-- rental section start  -->
     <section id="rental" class="position-relative">
@@ -177,13 +200,13 @@
                     <div class="swiper-slide">
                         <div class="card">
                             <div class="vehicle-badge">Camioneta - 3 filas de asientos</div> 
-                            <a href=" https://wa.me/message/VGHDMFRMHE3EG1"><img src="images/rentCar1.png" class="card-img-top" alt="..."></a>
+                            <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Mitsubishi%20Outlander%20GLX%202017."><img src="images/rentCar1.png" class="card-img-top" alt="Mitsubishi Outlander GLX 2017"></a>
                             <div class="card-body p-4 mt-4">
-                                <a href=" https://wa.me/message/VGHDMFRMHE3EG1">
-                                    <h4 class="card-title text-center mt-4">Mitsubishi Outlander GLX 2017</h4>
+                                <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Mitsubishi%20Outlander%20GLX%202017.">
+                                    <h4 class="card-title text-start mt-4">Mitsubishi Outlander GLX 2017</h4>
                                 </a>
                                 <div class="card-text ">
-                                    <ul class="list-unstyled text-center">
+                                    <ul class="list-unstyled text-start">
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image"> Frenos ABS</li>
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image"> Automático</li>
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image"> 4x4</li>
@@ -197,9 +220,9 @@
 
                                 </div>
                                 <hr>
-                                <div class="d-flex justify-content-center">
+                                <div class="d-flex justify-content-start">
                                    
-                                    <a href=" https://wa.me/message/VGHDMFRMHE3EG1" class="btn btn-primary">rentar ahora </a>
+                                    <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Mitsubishi%20Outlander%20GLX%202017." class="btn btn-primary">rentar ahora </a>
                                 </div>
 
                             </div>
@@ -212,13 +235,13 @@
                     <div class="swiper-slide">
                         <div class="card">
                             <div class="vehicle-badge">Camioneta - 2 filas de asientos</div> 
-                            <a href=" https://wa.me/message/VGHDMFRMHE3EG1"><img src="images/rentCar2.png" class="card-img-top" alt="..."></a>
+                            <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Mitsubishi%20Outlander%20Sport%202015."><img src="images/rentCar2.png" class="card-img-top" alt="..."></a>
                             <div class="card-body p-4 mt-4">
-                                <a href=" https://wa.me/message/VGHDMFRMHE3EG1">
-                                    <h4 class="card-title text-center mt-4">Mitsubishi Outlander Sport 2015</h4>
+                                <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Mitsubishi%20Outlander%20Sport%202015.">
+                                    <h4 class="card-title text-start mt-4">Mitsubishi Outlander Sport 2015</h4>
                                 </a>
                                 <div class="card-text ">
-                                    <ul class="list-unstyled text-center">
+                                    <ul class="list-unstyled text-start">
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image"> Frenos ABS</li>
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image"> Automático</li>
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image"> 4x4</li>
@@ -230,9 +253,9 @@
                                     
                                 </div>
                                 <hr>
-                                <div class="d-flex justify-content-center">
+                                <div class="d-flex justify-content-start">
                                  
-                                    <a href=" https://wa.me/message/VGHDMFRMHE3EG1" class="btn btn-primary">rentar ahora </a>
+                                    <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Mitsubishi%20Outlander%20Sport%202015." class="btn btn-primary">rentar ahora </a>
                                 </div>
 
                             </div>
@@ -245,13 +268,13 @@
                     <div class="swiper-slide">
                         <div class="card">
                             <div class="vehicle-badge">Camioneta - 3 filas de asientos</div> 
-                            <a href=" https://wa.me/message/VGHDMFRMHE3EG1" ><img src="images/rentCar3.png" class="card-img-top py-4" alt="..."></a>
+                            <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Mitsubishi%20Outlander%202015." ><img src="images/rentCar3.png" class="card-img-top py-4" alt="..."></a>
                             <div class="card-body p-3 mt-4">
-                                <a href=" https://wa.me/message/VGHDMFRMHE3EG1" >
-                                    <h4 class="card-title text-center mt-4">Mitsubishi Outlander 2015</h4>
+                                <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Mitsubishi%20Outlander%202015.">
+                                    <h4 class="card-title text-start mt-4">Mitsubishi Outlander 2015</h4>
                                 </a>
                                 <div class="card-text ">
-                                    <ul class="list-unstyled text-center">
+                                    <ul class="list-unstyled text-start">
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image"> Automático</li>
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image"> Motor 2.4</li>
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">A/C funcionando</li>
@@ -262,8 +285,8 @@
 
                                 </div>
                                 <hr>
-                                <div class="d-flex justify-content-center">
-                                    <a href=" https://wa.me/message/VGHDMFRMHE3EG1"  class="btn btn-primary">rentar ahora </a>
+                                <div class="d-flex justify-content-start">
+                                    <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Mitsubishi%20Outlander%202015."  class="btn btn-primary">rentar ahora </a>
                                 </div>
 
                             </div>
@@ -275,13 +298,13 @@
                     <div class="swiper-slide">
                         <div class="card">
                             <div class="vehicle-badge">Sedán</div> 
-                            <a  href=" https://wa.me/message/VGHDMFRMHE3EG1" ><img src="images/rentCar4.png" class="card-img-top" alt="..."></a>
+                            <a  href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Kia%20Rio%202014." ><img src="images/rentCar4.png" class="card-img-top" alt="..."></a>
                             <div class="card-body p-3 mt-4">
-                                <a href=" https://wa.me/message/VGHDMFRMHE3EG1" >
-                                    <h4 class="card-title text-center mt-4">Kia Rio 2014</h4>
+                                <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Kia%20Rio%202014." >
+                                    <h4 class="card-title text-start mt-4">Kia Rio 2014</h4>
                                 </a>
                                 <div class="card-text ">
-                                    <ul class="list-unstyled text-center">
+                                    <ul class="list-unstyled text-start">
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image"> Automático</li>
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image"> Motor 1.2</li>
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">A/C funcionando</li>
@@ -291,9 +314,9 @@
 
                                 </div>
                                 <hr>
-                                <div class="d-flex justify-content-center">
+                                <div class="d-flex justify-content-start">
                                    
-                                    <a  href=" https://wa.me/message/VGHDMFRMHE3EG1"  class="btn btn-primary">rentar ahora </a>
+                                    <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Kia%20Rio%202014." class="btn btn-primary">rentar ahora </a>
                                 </div>
 
                             </div>
@@ -306,13 +329,13 @@
                     <div class="swiper-slide">
                         <div class="card">
                             <div class="vehicle-badge">Sedán</div> 
-                            <a href=" https://wa.me/message/VGHDMFRMHE3EG1"><img src="images/rentCar5.png" class="card-img-top py-3" alt="..."></a>
+                            <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Kia%20Rio%202017."><img src="images/rentCar5.png" class="card-img-top py-3" alt="..."></a>
                             <div class="card-body p-4 mt-4">
-                                <a href=" https://wa.me/message/VGHDMFRMHE3EG1">
-                                    <h4 class="card-title text-center mt-4">Kia Rio 2017</h4>
+                                <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Kia%20Rio%202017.">
+                                    <h4 class="card-title text-start mt-4">Kia Rio 2017</h4>
                                 </a>
                                 <div class="card-text ">
-                                    <ul class="list-unstyled text-center">
+                                    <ul class="list-unstyled text-start">
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image"> Automático</li>
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image"> Motor 1.6</li>
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">A/C funcionando</li>
@@ -322,9 +345,9 @@
 
                                 </div>
                                 <hr>
-                                <div class="d-flex justify-content-center">
+                                <div class="d-flex justify-content-start">
                                  
-                                    <a href=" https://wa.me/message/VGHDMFRMHE3EG1" class="btn btn-primary">rentar ahora </a>
+                                    <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Kia%20Rio%202017." class="btn btn-primary">rentar ahora </a>
                                 </div>
 
                             </div>
@@ -337,13 +360,13 @@
                     <div class="swiper-slide">
                         <div class="card">
                             <div class="vehicle-badge">Camioneta 2 filas de asientos</div> 
-                            <a href=" https://wa.me/message/VGHDMFRMHE3EG1"><img src="images/rentCar6.png" class="card-img-top" alt="..."></a>
+                            <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Jeep%20Patriot%204x4."><img src="images/rentCar6.png" class="card-img-top" alt="..."></a>
                             <div class="card-body p-3 mt-3">
-                                <a href=" https://wa.me/message/VGHDMFRMHE3EG1">
-                                    <h4 class="card-title text-center mt-4">Jeep Patriot 4x4</h4>
+                                <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Jeep%20Patriot%204x4.">
+                                    <h4 class="card-title text-start mt-4">Jeep Patriot 4x4</h4>
                                 </a>
                                 <div class="card-text ">
-                                    <ul class="list-unstyled text-center">
+                                    <ul class="list-unstyled text-start">
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">Frenos ABS</li>
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">Motor 2.4</li>
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">Paquete eléctrico</li>
@@ -356,9 +379,9 @@
                             
                                 </div>
                                 <hr>
-                                <div class="d-flex justify-content-center">
+                                <div class="d-flex justify-content-start">
                                    
-                                    <a href=" https://wa.me/message/VGHDMFRMHE3EG1" class="btn btn-primary">rentar ahora </a>
+                                    <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Jeep%20Patriot%204x4." class="btn btn-primary">rentar ahora </a>
                                 </div>
 
                             </div>
@@ -372,13 +395,13 @@
                     <div class="swiper-slide">
                         <div class="card">
                             <div class="vehicle-badge">Camioneta 2 filas de asientos</div> 
-                            <a href=" https://wa.me/message/VGHDMFRMHE3EG1"><img src="images/rentCar7.png" class="card-img-top" alt="..."></a>
+                            <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Ford%20Escape%204x2."><img src="images/rentCar7.png" class="card-img-top" alt="..."></a>
                             <div class="card-body p-1">
-                                <a href=" https://wa.me/message/VGHDMFRMHE3EG1">
-                                    <h4 class="card-title text-center mt-4">Ford Escape 4x2</h4>
+                                <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Ford%20Escape%204x2.">
+                                    <h4 class="card-title text-start mt-4">Ford Escape 4x2</h4>
                                 </a>
                                 <div class="card-text ">
-                                    <ul class="list-unstyled text-center">
+                                    <ul class="list-unstyled text-start">
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">Frenos ABS</li>
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">Motor 2.5</li>
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">Paquete eléctrico</li>
@@ -390,9 +413,9 @@
 
                                 </div>
                                 <hr>
-                                <div class="d-flex justify-content-center">
+                                <div class="d-flex justify-content-start">
                                    
-                                    <a href=" https://wa.me/message/VGHDMFRMHE3EG1" class="btn btn-primary">rentar ahora </a>
+                                    <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Ford%20Escape%204x2." class="btn btn-primary">rentar ahora </a>
                                 </div>
 
                             </div>
@@ -404,13 +427,13 @@
                       <div class="swiper-slide">
                         <div class="card">
                             <div class="vehicle-badge">Camioneta 2 filas de asientos</div> 
-                            <a href=" https://wa.me/message/VGHDMFRMHE3EG1"><img src="images/rentCar8.png" class="card-img-top" alt="..."></a>
+                            <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Nissan%20Rouge."><img src="images/rentCar8.png" class="card-img-top" alt="..."></a>
                             <div class="card-body p-1">
-                                <a href=" https://wa.me/message/VGHDMFRMHE3EG1">
-                                    <h4 class="card-title text-center mt-4">Nissan Rouge</h4>
+                                <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Nissan%20Rouge.">
+                                    <h4 class="card-title text-start mt-4">Nissan Rouge</h4>
                                 </a>
                                 <div class="card-text ">
-                                    <ul class="list-unstyled text-center">
+                                    <ul class="list-unstyled text-start">
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image"> Traccion 4x4 AWD</li>
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">Motor 2.4</li>
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">Automatico</li>
@@ -420,9 +443,9 @@
                                     </ul>
                                 </div>
                                 <hr>
-                                <div class="d-flex justify-content-center">
+                                <div class="d-flex justify-content-start">
                                    
-                                    <a href=" https://wa.me/message/VGHDMFRMHE3EG1" class="btn btn-primary">rentar ahora </a>
+                                    <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Nissan%20Rouge." class="btn btn-primary">rentar ahora </a>
                                 </div>
 
                             </div>
@@ -436,13 +459,13 @@
                         <div class="swiper-slide">
                             <div class="card">
                                 <div class="vehicle-badge">Camioneta 3 filas de asientos</div> 
-                                <a href=" https://wa.me/message/VGHDMFRMHE3EG1"><img src="images/rentCar9.png" class="card-img-top p-4" alt="..."></a>
+                                <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Nissan%20Pathfinder%204x4."><img src="images/rentCar9.png" class="card-img-top p-4" alt="..."></a>
                                 <div class="card-body p-4">
-                                    <a href=" https://wa.me/message/VGHDMFRMHE3EG1">
-                                        <h4 class="card-title text-center mt-4">Nissan Pathfinder 4x4</h4>
+                                    <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Nissan%20Pathfinder%204x4.">
+                                        <h4 class="card-title text-start mt-4">Nissan Pathfinder 4x4</h4>
                                     </a>
                                     <div class="card-text ">
-                                        <ul class="list-unstyled text-center">
+                                        <ul class="list-unstyled text-start">
                                             <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image"> Frenos ABS</li>
                                             <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">Paquete Eléctrico</li>
                                             <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">Doble aire acondicionado</li>
@@ -457,9 +480,9 @@
                                        
                                     </div>
                                     <hr>
-                                    <div class="d-flex justify-content-center">
+                                    <div class="d-flex justify-content-start">
                                     
-                                        <a href=" https://wa.me/message/VGHDMFRMHE3EG1" class="btn btn-primary">rentar ahora </a>
+                                        <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Nissan%20Pathfinder%204x4." class="btn btn-primary">rentar ahora </a>
                                     </div>
     
                                 </div>
@@ -472,13 +495,13 @@
                           <div class="swiper-slide">
                             <div class="card">
                                 <div class="vehicle-badge">Sedán</div> 
-                                <a href=" https://wa.me/message/VGHDMFRMHE3EG1"><img src="images/rentCar10.png" class="card-img-top p-5" alt="..."></a>
+                                <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Nissan%20Versa%202015."><img src="images/rentCar10.png" class="card-img-top p-5" alt="..."></a>
                                 <div class="card-body p-4">
-                                    <a href=" https://wa.me/message/VGHDMFRMHE3EG1">
-                                        <h4 class="card-title text-center mt-4">Nissan Versa 2015</h4>
+                                    <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Nissan%20Versa%202015.">
+                                        <h4 class="card-title text-start mt-4">Nissan Versa 2015</h4>
                                     </a>
                                     <div class="card-text ">
-                                        <ul class="list-unstyled text-center">
+                                        <ul class="list-unstyled text-start">
                                             <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image"> Motor 1.6</li>
                                             <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">Sistema Eléctrico completo</li>
                                             <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">Automático</li>
@@ -490,9 +513,9 @@
                                         </ul>
                                     </div>
                                     <hr>
-                                    <div class="d-flex justify-content-center">
+                                    <div class="d-flex justify-content-start">
                                        
-                                        <a href=" https://wa.me/message/VGHDMFRMHE3EG1" class="btn btn-primary">rentar ahora </a>
+                                        <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Nissan%20Versa%202015." class="btn btn-primary">rentar ahora </a>
                                     </div>
     
                                 </div>
@@ -505,13 +528,13 @@
                             <div class="swiper-slide">
                                 <div class="card">
                                     <div class="vehicle-badge">Hatchback</div> 
-                                    <a href=" https://wa.me/message/VGHDMFRMHE3EG1"><img src="images/rentCar11.png" class="card-img-top p-3" alt="..."></a>
+                                    <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Kia%20Soul%202012."><img src="images/rentCar11.png" class="card-img-top p-3" alt="..."></a>
                                     <div class="card-body p-1 mt-3">
-                                        <a href=" https://wa.me/message/VGHDMFRMHE3EG1">
-                                            <h4 class="card-title text-center mt-4">Kia Soul 2012</h4>
+                                        <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Kia%20Soul%202012.">
+                                            <h4 class="card-title text-start mt-4">Kia Soul 2012</h4>
                                         </a>
                                         <div class="card-text ">
-                                            <ul class="list-unstyled text-center">
+                                            <ul class="list-unstyled text-start">
                                                 <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image"> Motor 2.0</li>
                                                 <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">Automático</li>
                                                 <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">A/C funcionando</li>
@@ -522,9 +545,9 @@
                                             </ul>
                                         </div>
                                         <hr>
-                                        <div class="d-flex justify-content-center">
+                                        <div class="d-flex justify-content-start">
                                           
-                                            <a href=" https://wa.me/message/VGHDMFRMHE3EG1" class="btn btn-primary">rentar ahora </a>
+                                            <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Kia%20Soul%202012." class="btn btn-primary">rentar ahora </a>
                                         </div>
         
                                     </div>
@@ -536,13 +559,13 @@
                     <div class="swiper-slide">
                         <div class="card">
                             <div class="vehicle-badge">Sedán</div> 
-                            <a href=" https://wa.me/message/VGHDMFRMHE3EG1"><img src="images/rentCar12.png" class="card-img-top p-3" alt="..."></a>
+                            <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Kia%20Forte%202016."><img src="images/rentCar12.png" class="card-img-top p-3" alt="..."></a>
                             <div class="card-body p-4">
-                                <a href=" https://wa.me/message/VGHDMFRMHE3EG1">
-                                    <h4 class="card-title text-center mt-4">Kia Forte 2016</h4>
+                                <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Kia%20Forte%202016.">
+                                    <h4 class="card-title text-start mt-4">Kia Forte 2016</h4>
                                 </a>
                                 <div class="card-text ">
-                                    <ul class="list-unstyled text-center">
+                                    <ul class="list-unstyled text-start">
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image"> Motor 1.8 Turbo</li>
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">Automático</li>
                                         <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">A/C funcionando</li>
@@ -553,9 +576,9 @@
                                     </ul>
                                 </div>
                                 <hr>
-                                <div class="d-flex justify-content-center">
+                                <div class="d-flex justify-content-start">
                                  
-                                    <a href=" https://wa.me/message/VGHDMFRMHE3EG1" class="btn btn-primary">rentar ahora </a>
+                                    <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Kia%20Forte%202016." class="btn btn-primary">rentar ahora </a>
                                 </div>
 
                             </div>
@@ -568,13 +591,13 @@
                               <div class="swiper-slide">
                                 <div class="card">
                                     <div class="vehicle-badge">Sedán</div> 
-                                    <a href=" https://wa.me/message/VGHDMFRMHE3EG1"><img src="images/rentCar13.png" class="card-img-top mt-5 p-4" alt="..."></a>
+                                    <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Hyundai%20Elantra%202015."><img src="images/rentCar13.png" class="card-img-top mt-5 p-4" alt="..."></a>
                                     <div class="card-body p-5 mt-2">
-                                        <a href=" https://wa.me/message/VGHDMFRMHE3EG1">
-                                            <h4 class="card-title text-center mt-4">Hyundai Elantra 2015</h4>
+                                        <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Hyundai%20Elantra%202015.">
+                                            <h4 class="card-title text-start mt-4">Hyundai Elantra 2015</h4>
                                         </a>
                                         <div class="card-text ">
-                                            <ul class="list-unstyled text-center">
+                                            <ul class="list-unstyled text-start">
                                                 <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">Motor 1.8 ECO</li>
                                                 <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">Automático</li>
                                                 <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">A/C funcionando</li>
@@ -585,9 +608,9 @@
                                             </ul>
                                         </div>
                                         <hr>
-                                        <div class="d-flex justify-content-center">
+                                        <div class="d-flex justify-content-start">
                                          
-                                            <a href=" https://wa.me/message/VGHDMFRMHE3EG1" class="btn btn-primary">rentar ahora </a>
+                                            <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Hyundai%20Elantra%202015." class="btn btn-primary">rentar ahora </a>
                                         </div>
         
                                     </div>
@@ -600,13 +623,13 @@
                                <div class="swiper-slide">
                                 <div class="card">
                                     <div class="vehicle-badge">Crossover - 2 filas de asientos</div> 
-                                    <a href=" https://wa.me/message/VGHDMFRMHE3EG1"><img src="images/rentCar14.png" class="card-img-top p-4" alt="..."></a>
+                                    <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Mitsubishi%20Eclipse%202019."><img src="images/rentCar14.png" class="card-img-top p-4" alt="..."></a>
                                     <div class="card-body">
-                                        <a href=" https://wa.me/message/VGHDMFRMHE3EG1">
-                                            <h4 class="card-title text-center mt-4">Mitsubishi Eclipse 2019</h4>
+                                        <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Mitsubishi%20Eclipse%202019.">
+                                            <h4 class="card-title text-start mt-4">Mitsubishi Eclipse 2019</h4>
                                         </a>
                                         <div class="card-text ">
-                                            <ul class="list-unstyled text-center">
+                                            <ul class="list-unstyled text-start">
                                                 <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image"> Motor 1.6 Turbo</li>
                                                 <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">Automático</li>
                                                 <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">4X4</li>
@@ -618,9 +641,9 @@
                                             </ul>
                                         </div>
                                         <hr>
-                                        <div class="d-flex justify-content-center">
+                                        <div class="d-flex justify-content-start">
                                          
-                                            <a href=" https://wa.me/message/VGHDMFRMHE3EG1" class="btn btn-primary">rentar ahora </a>
+                                            <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Mitsubishi%20Eclipse%202019." class="btn btn-primary">rentar ahora </a>
                                         </div>
         
                                     </div>
@@ -633,13 +656,13 @@
                              <div class="swiper-slide">
                                 <div class="card">
                                     <div class="vehicle-badge">Hatchback</div> 
-                                    <a href=" https://wa.me/message/VGHDMFRMHE3EG1"><img src="images/rentCar15.png" class="card-img-top p-4" alt="..."></a>
+                                    <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Kia%20Soul%202018."><img src="images/rentCar15.png" class="card-img-top p-4" alt="..."></a>
                                     <div class="card-body">
-                                        <a href=" https://wa.me/message/VGHDMFRMHE3EG1">
-                                            <h4 class="card-title text-center mt-4">Kia Soul 2018</h4>
+                                        <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Kia%20Soul%202018.">
+                                            <h4 class="card-title text-start mt-4">Kia Soul 2018</h4>
                                         </a>
                                         <div class="card-text ">
-                                            <ul class="list-unstyled text-center">
+                                            <ul class="list-unstyled text-start">
                                                 <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image"> Motor 1.6</li>
                                                 <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">Automático</li>
                                                 <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">  Camara de retroceso</li>
@@ -652,9 +675,9 @@
 
                                         </div>
                                         <hr>
-                                        <div class="d-flex justify-content-center">
+                                        <div class="d-flex justify-content-start">
                                          
-                                            <a href=" https://wa.me/message/VGHDMFRMHE3EG1" class="btn btn-primary">rentar ahora </a>
+                                            <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Kia%20Soul%202018."class="btn btn-primary">rentar ahora </a>
                                         </div>
         
                                     </div>
@@ -669,13 +692,13 @@
                              <div class="swiper-slide">
                                 <div class="card">
                                     <div class="vehicle-badge">Pickup</div> 
-                                    <a href=" https://wa.me/message/VGHDMFRMHE3EG1"><img src="images/rentCar16.png" class="card-img-top  mt-5" alt="..."></a>
+                                    <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Nissan%20Frontier%202021."><img src="images/rentCar16.png" class="card-img-top  mt-5" alt="..."></a>
                                     <div class="card-body mt-3">
-                                        <a href=" https://wa.me/message/VGHDMFRMHE3EG1">
-                                            <h4 class="card-title text-center mt-4">Nissan Frontier 2021</h4>
+                                        <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Nissan%20Frontier%202021.">
+                                            <h4 class="card-title text-start mt-4">Nissan Frontier 2021</h4>
                                         </a>
                                         <div class="card-text ">
-                                            <ul class="list-unstyled text-center">
+                                            <ul class="list-unstyled text-start">
                                                 <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">Motor 2.4 Diesel</li>
                                                 <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image">  Transmisión Manual </li>
                                                 <li class="rental-list"><img src="images/dot.png" class="px-3" alt="image"> 4X4</li>
@@ -689,9 +712,9 @@
                                             </ul>          
                                         </div>
                                         <hr>
-                                        <div class="d-flex justify-content-center">
+                                        <div class="d-flex justify-content-start">
                                          
-                                            <a href=" https://wa.me/message/VGHDMFRMHE3EG1" class="btn btn-primary">rentar ahora </a>
+                                            <a href="https://wa.me/78699847?text=Hola,%20estoy%20interesado%20en%20rentar%20el%20Nissan%20Frontier%202021." class="btn btn-primary">rentar ahora </a>
                                         </div>
         
                                     </div>
@@ -709,93 +732,231 @@
 
     </section>
 
+    <br>
+    <br>
+    <br>
 
     <!-- formasPago section start  -->
-    <section id="formasPago">
+    <section id="formasPago" class="py-5">
         <div class="container py-5">
-            <h2 class="text-center my-5">Formas de <span style="color:#024572;">pago</span> </h2>
-    
-            <div class="d-flex flex-wrap justify-content-center align-items-center">
-                <div class="col-md-3 mb-3">
-                    <img src="images/wompi.png" class="imagen-responsive2" width="900">
+            <h2 class="text-center mb-5">Formas de <span style="color:#024572;">pago</span></h2>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-6 col-md-3 mb-3">
+                    <img src="images/wompi.png" class="img-fluid payment-image" alt="Wompi">
                 </div>
-                <div class="col-md-3 mb-3">
-                    <img src="images/cubo.png" class="imagen-responsive2">
+                <div class="col-6 col-md-3 mb-3">
+                    <img src="images/cubo.png" class="img-fluid payment-image" alt="Cubo">
                 </div>
-                <div class="col-md-3 mb-5">
-                    <img src="images/logo-visa-mastercard.png" class="imagen-responsive2">
+                <div class="col-6 col-md-3 mb-3">
+                    <img src="images/logo-visa-mastercard.png" class="img-fluid payment-image" alt="Visa y Mastercard">
                 </div>
-                <div class="col-md-3 mb-5">
-                    <img src="images/transferencia-de-dinero.png" class="imagen-responsive2" width="150">
+                <div class="col-6 col-md-3 mb-3">
+                    <img src="images/transferencia-de-dinero.png" class="img-fluid payment-image" alt="Transferencia de Dinero">
                 </div>
-
-                <p class="fw-bold mt-3">Nuestros clientes nos recomiendan: </p>
-                <a href="https://maps.app.goo.gl/VGfBnjvJ4hXwcuBu7" class="text-primary"> https://maps.app.goo.gl/VGfBnjvJ4hXwcuBu7</a>
-                
             </div>
         </div>
     </section>
-    
-
-    <!-- testimonial section start  -->
-    <section id="testimonial" class=" position-relative">
-        <div class="pattern-overlay pattern-left position-absolute">
-            <img src="images/testimonial-pattern.png" alt="pattern">
-        </div>
-        <div class="container my-5 py-5">
-            <div class="swiper testimonial-swiper">
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide text-center">
-                        <div class="offset-2 col-8">
-                            <iconify-icon icon="mdi:format-quote-open" class="testimonial-icon"></iconify-icon>
-                            <p class="testimonial-paragraph">I would recommend to everyone. Car was in a really good condition and clean.
-                                 The service was easy and kind, they were really helpful and I really appreciate answering all our 
-                                 questions, not only regarding the car and rental!
-                            </p>
-                            <h5>Justyna Piątek</h5>
-                        </div>
-                    </div>
-                    <div class="swiper-slide text-center">
-                        <div class="offset-2 col-8">
-                            <iconify-icon icon="mdi:format-quote-open" class="testimonial-icon"></iconify-icon>
-                            <p class="testimonial-paragraph">Excellent service. Highly recommended. Car was very nice condition, super clean,
-                                 working very smooth, low fuel consumption. They help us every time we had a question and even they pick up
-                                  us later to bus station. So kind and lovely people run this car rental.
-                            </p>
-                            <h5>Jakub Pagacz</h5>
-                        </div>
-                    </div>
-                    <div class="swiper-slide text-center">
-                        <div class="offset-2 col-8">
-                            <iconify-icon icon="mdi:format-quote-open" class="testimonial-icon"></iconify-icon>
-                            <p class="testimonial-paragraph">La puntualidad, la seriedad y el trato son de lo mejor muy recomendado
-                            </p>
-                            <h5>Paulinho Rubio</h5>
-                        </div>
-                    </div>
-                    <div class="swiper-slide text-center">
-                        <div class="offset-2 col-8">
-                            <iconify-icon icon="mdi:format-quote-open" class="testimonial-icon"></iconify-icon>
-                            <p class="testimonial-paragraph">Súper recomendados, si ud anda buscando excelentes precios y excelente atención 
-                                ellos  son su mejor opción. Adquirí sus servicios y quede encantada tanto de su personal  como del vehículo 
-                                súper cómodo, muy accesibles indiscutiblemente serán mis preferidos y los #1 en renta.
-                              
-                            </p>
-                            <h5>Leydis Gonzalez </h5>
-                        </div>
-                    </div>
+<!-- formasPago section end -->
 
 
 
-                </div>
-                <div class="swiper-pagination position-unset mt-4"></div>
+<br>
+<br>
+<section>
+    <div class="container py-5">
+        <div class="row justify-content-center align-items-center mb-5 text-center text-md-start">
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start">
+                <h2 class="fw-bold mt-3">Nuestros clientes nos <span style="color:#024572;">recomiendan</span></h2>
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-center">
+                <img src="images/google-maps-icon.png" alt="Google Maps" class="mb-2" width="100">
+                <a href="https://maps.app.goo.gl/VGfBnjvJ4hXwcuBu7" class="text-primary">https://maps.app.goo.gl/VGfBnjvJ4hXwcuBu7</a>
             </div>
         </div>
+    </div>
+</section>
 
 
 
-    </section>
+
+    <br>
+    
+
+   <!-- Testimonial section start -->
+<section id="testimonial" class="position-relative">
+    <div class="container my-5 py-5">
+        <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide text-center">
+                    <div class="offset-2 col-8">
+                        <iconify-icon icon="mdi:format-quote-open" class="testimonial-icon"></iconify-icon>
+                        <div class="testimonial-content d-flex align-items-center">
+                            <img src="images/typhanieCombes.png" alt="Justyna Piątek" class="testimonial-photo rounded-circle">
+                            <div class="testimonial-text ms-3 text-start">
+                                <div class="stars">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                </div>
+                                <p class="testimonial-paragraph">¡Lo mejor para alquilar un auto en Santa Ana!  excelente servicio, buena comunicación, auto en muy buenas condiciones.. Incluso te entregan la tarjeta en tu hotel, y todo por muy buen precio! Estoy encantada de haberlos elegido para mi viaje a El Salvador, ¡gracias al equipo!</p>
+                                <h5>Typhaine Combes</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide text-center">
+                    <div class="offset-2 col-8">
+                        <iconify-icon icon="mdi:format-quote-open" class="testimonial-icon"></iconify-icon>
+                        <div class="testimonial-content d-flex align-items-center">
+                            <img src="images/OlgaSolís.png" alt="Jakub Pagacz" class="testimonial-photo rounded-circle">
+                            <div class="testimonial-text ms-3 text-start">
+                                <div class="stars">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                </div>
+                                <p class="testimonial-paragraph">100% recomendadisimos, son unas personas muy amables, alegres, responsables, respetuosos, muy confiables y siempre entregan sus vehículos muy limpios y les dan un buen mantenimiento, sin duda los mejores de Santa Ana </p>
+                                <h5>Olga Johana Solís</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide text-center">
+                    <div class="offset-2 col-8">
+                        <iconify-icon icon="mdi:format-quote-open" class="testimonial-icon"></iconify-icon>
+                        <div class="testimonial-content d-flex align-items-center">
+                            <img src="images/AdrianaArteaga.png" alt="Paulinho Rubio" class="testimonial-photo rounded-circle">
+                            <div class="testimonial-text ms-3 text-start">
+                                <div class="stars">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                </div>
+                                <p class="testimonial-paragraph">Excelente servicio, desde que te atienden en WhatsApp hasta que te entregan el carro y están pendientes, súper recomendados</p>
+                                <h5>Adriana S Arteaga</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide text-center">
+                    <div class="offset-2 col-8">
+                        <iconify-icon icon="mdi:format-quote-open" class="testimonial-icon"></iconify-icon>
+                        <div class="testimonial-content d-flex align-items-center">
+                            <img src="images/IvyPolanco.png" alt="Ivy Polanco" class="testimonial-photo rounded-circle">
+                            <div class="testimonial-text ms-3 text-start">
+                                <div class="stars">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                </div>
+                                <p class="testimonial-paragraph">Excelente servicio y autos a muy buenos precios. Definitivamente volveremos a contratar en el futuro.</p>
+                                <h5>Ivy Polanco</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide text-center">
+                    <div class="offset-2 col-8">
+                        <iconify-icon icon="mdi:format-quote-open" class="testimonial-icon"></iconify-icon>
+                        <div class="testimonial-content d-flex align-items-center">
+                            <img src="images/MelodyKwong.png" alt="Ivy Polanco" class="testimonial-photo rounded-circle">
+                            <div class="testimonial-text ms-3 text-start">
+                                <div class="stars">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                </div>
+                                <p class="testimonial-paragraph">Altamente recomendado para el alquiler de autos en Santa Ana, su equipo es muy servicial, receptivo y amigable. El precio era muy justo para un alquiler de automóvil durante 24 horas e incluía seguro de automóvil, un conductor adicional y asistencia en la carretera. Dejaron y recogieron el coche en mi albergue: una experiencia sencilla y sin contratiempos.</p>
+                                <h5>Melody Kwong</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide text-center">
+                    <div class="offset-2 col-8">
+                        <iconify-icon icon="mdi:format-quote-open" class="testimonial-icon"></iconify-icon>
+                        <div class="testimonial-content d-flex align-items-center">
+                            <img src="images/AlessioScorrano.png" alt="Ivy Polanco" class="testimonial-photo rounded-circle">
+                            <div class="testimonial-text ms-3 text-start">
+                                <div class="stars">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                </div>
+                                <p class="testimonial-paragraph">¡Agencia excelente y confiable y el precio fue justo! Trajeron el automóvil directamente a mi hotel y también lo recogieron para dejarlo, lo cual es poco común en mi experiencia con otras agencias. El auto estaba en excelentes condiciones y el personal hablaba muy bien inglés, por lo que fue muy fácil comunicarse y también me dieron consejos sobre cómo viajar por El Salvador. ¡Lo recomendé totalmente!</p>
+                                <h5>Alessio Scorrano</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide text-center">
+                    <div class="offset-2 col-8">
+                        <iconify-icon icon="mdi:format-quote-open" class="testimonial-icon"></iconify-icon>
+                        <div class="testimonial-content d-flex align-items-center">
+                            <img src="images/JustynaPiątek.png" alt="Ivy Polanco" class="testimonial-photo rounded-circle">
+                            <div class="testimonial-text ms-3 text-start">
+                                <div class="stars">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                </div>
+                                <p class="testimonial-paragraph">Estoy muy contento con el alquiler, el coche estaba en muy buenas condiciones y todo fue muy sencillo y sencillo. Fueron muy amables y serviciales no solo con el alquiler sino también con las preguntas sobre viajar a Salvador. Recomendaré utilizar su servicio a todos</p>
+                                <h5>Justyna Piątek</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide text-center">
+                    <div class="offset-2 col-8">
+                        <iconify-icon icon="mdi:format-quote-open" class="testimonial-icon"></iconify-icon>
+                        <div class="testimonial-content d-flex align-items-center">
+                            <img src="images/NathanvdH.png" alt="Ivy Polanco" class="testimonial-photo rounded-circle">
+                            <div class="testimonial-text ms-3 text-start">
+                                <div class="stars">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star">
+                                </div>
+                                <p class="testimonial-paragraph">Gran servicio, superaron nuestras expectativas al ayudarnos y el precio fue realmente bueno.</p>
+                                <h5>Nathan vdH</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination position-unset mt-4"></div>
+        </div>
+    </div>
+</section>
+<!-- Testimonial section end -->
+
 
     <!-- sobreNosotros section start  -->
     <section id="sobreNosotros">
@@ -816,26 +977,24 @@
             <div class="justify-content-center text-center">
                 <h3 style="color: #4f90d3;">Misión</h3>
                 <p class="mb-5">
-                   Dedicarnos a proporcionar vehículos seguros, confiables y de alta calidad, <br>
-                   centrados en ofrecer comodidad y sostenibilidad ambiental, asegurando la satisfacción y 
-                   lealtad del cliente.
+                    Proporcionar vehículos seguros, confiables en excelentes condiciones para que los usuarios tengan una maravillosa experiencia a la hora de usar las unidades y por medio de un excelente soporte a las personas asegurar la satisfacción y lealtad de nuestros clientes.
                 </p>
 
                 <h3 style="color: #4f90d3;">Visión </h3>
                 <p>
-                    Ser reconocidos como empresa líder en renta de vehículos destacados por la calidad y compromiso <br>
-                    con la sostenibilidad ambienta.
+                    Ser reconocidos como empresa líder en renta de vehículos destacados por el excelente estado de nuestras unidades y atención al cliente.
 
                 </p>
 
+                <br>
+                <br>
+
             </div>
-
-
-     
-
 
         </div>
     </section>
+
+
 
     <!-- services section start  -->
     <section id="services">
@@ -846,9 +1005,7 @@
                     <h2 class="">Nuestros <span style="color:#024572;">mejores servicios</span> para ti</h2>
                 </div>
                 <div class=" pb-5  col-lg-6">
-                    <p class="pt-4">Nosotros estamos enfocados en ofrecer el mejor servicio 
-                        por lo que siempre buscamos que el cliente se sienta bien buscando adaptarnos lo mejor 
-                        posible a sus necesidades y deseos.
+                    <p class="pt-4">Enfocados en ofrecer el mas excelente servicio por lo que buscamos que tu como cliente te sientas satisfecho no solo en la atención recibida sino en la adaptación a tus necesidades y expectativas.
                     </p>
                 </div>
             </div>
@@ -858,97 +1015,74 @@
     </section>
 
     <section id="service-2">
-        <div class=" services-sub container mb-5 pb-5">
+        <div class="services-sub container mb-5 pb-5">
             <div class="row">
-                <div class=" mt-4 col-6 col-lg-3">
+                <div class="mt-4 col-12 col-md-6 col-lg-3">
                     <div class="services-components text-center pt-5 pb-5">
                         <iconify-icon class="services-icon my-2" icon="solar:shield-check-outline" style="color:#024572;"></iconify-icon>
                         <h5>Pago Seguro</h5>
-                        <ul class="list-unstyled mt-1">
-                            <li class="rental-list">
-                                &#10004; No te cobramos contrato.
-                            </li>
-
+                        <ul class="list-unstyled text-start mt-1 ms-2">
+                            <li class="rental-list">&#10004; No te cobramos contrato.</li>
                             <li class="rental-list">&#10004; No te cobramos asistencia 24/7.</li>
                             <li class="rental-list">&#10004; Sin cobro de seguro</li>
                         </ul>
-                    
                     </div>
                 </div>
-                <div class=" mt-4 col-6 col-lg-3">
+                <div class="mt-4 col-12 col-md-6 col-lg-3">
                     <div class="services-components text-center pt-5 pb-5">
                         <iconify-icon class="services-icon my-2" icon="solar:bookmark-opened-outline" style="color:#024572;"></iconify-icon>
                         <h5>Cualquier clase de vehiculo</h5>
-                        <ul class="list-unstyled mt-1 mb-4">
-                            <li class="rental-list">
-                                &#10004; Cuidamos en perfecto estado nuestras unidades para garantizar tu seguridad.
-                            </li>
+                        <ul class="list-unstyled text-start mb-4 ms-2">
+                            <li class="rental-list">&#10004; Cuidamos en perfecto estado nuestras unidades para garantizar tu seguridad.</li>
                         </ul>
-                        
                     </div>
                 </div>
-                <div class=" mt-4 col-6 col-lg-3">
+                <div class="mt-4 col-12 col-md-6 col-lg-3">
                     <div class="services-components text-center pt-5 pb-5">
                         <iconify-icon class="services-icon my-2" icon="solar:user-circle-outline" style="color:#024572;"></iconify-icon>
                         <h5>Atención personalizada</h5>
-                        <ul class="list-unstyled mt-1 mb-5">
-                            <li class="rental-list">
-                                &#10004; Asistencia Bilingüe.
-                            </li>
-
-                            <li class="rental-list"> &#10004; La amabilidad nos caracteriza.</li>
+                        <ul class="list-unstyled text-start mt-1 mb-5 ms-2">
+                            <li class="rental-list">&#10004; Asistencia Bilingüe.</li>
+                            <li class="rental-list">&#10004; La amabilidad nos caracteriza.</li>
                         </ul>
                     </div>
                 </div>
-                <div class=" mt-4 col-6 col-lg-3">
+                <div class="mt-4 col-12 col-md-6 col-lg-3">
                     <div class="services-components text-center pt-4 pb-3">
-                        <iconify-icon class="services-icon my-2"  icon="lucide:circle-plus" style="color:#024572;"></iconify-icon>
+                        <iconify-icon class="services-icon my-2" icon="lucide:circle-plus" style="color:#024572;"></iconify-icon>
                         <h5>Servicios Adicionales</h5>
-                        <ul class="list-unstyled mt-1">
-                            <li class="rental-list">
-                                &#10004; Entregas a domicilio, oficinas, hoteles y aeropuerto.
-                            </li>
-
-                            <li class="rental-list"> &#10004; Viajes en microbús dentro y fuera del pais.</li>
-                            <li class="rental-list">&#10004; Servicio de motorista asignado.</li>  
-                            <li class="rental-list">&#10004; Viajes al aeropuerto.</li>  
+                        <ul class="list-unstyled text-start mt-1 ms-2">
+                            <li class="rental-list">&#10004; Entregas a domicilio, oficinas, hoteles y aeropuerto.</li>
+                            <li class="rental-list">&#10004; Viajes en microbús dentro y fuera del país.</li>
+                            <li class="rental-list">&#10004; Servicio de motorista asignado.</li>
+                            <li class="rental-list">&#10004; Viajes al aeropuerto.</li>
                         </ul>
                     </div>
                 </div>
-
-                <div class="col-6 col-lg-3">
+                <div class="mt-4 col-12 col-md-6 col-lg-3">
                     <div class="services-components text-center pt-4 pb-3">
                         <iconify-icon class="services-icon my-2" icon="solar:call-chat-outline" style="color:#024572;"></iconify-icon>
                         <h5>Centro de ayuda y soporte</h5>
-                        <ul class="list-unstyled mt-1">
-                            <li class="rental-list"> &#10004; Asesoría de turismo y otros al extranjero, turista y hermano lejano.</li>
-                            <li class="rental-list"><a href="https://www.facebook.com/groups/1839136963119337/?ref=share" style="max-width: 100%; word-wrap: break-word;" class="text-primary"> https://www.facebook.com/shalomrentacar</a></li>
-                            <li class="rental-list">&#10004; Recomendaciones de hostales</li>  
-                            <li>y hoteles como Airbnb.</li>
-                            <li class="rental-list">&#10004; Sugerencias de restaurantes y comidas y/o alimentación
-                            </li> 
-                            <li>incluidos aquellos que comen orgánico, kosher y vegetariano.</li>
-                          
+                        <ul class="list-unstyled text-start mt-1">
+                            <li class="rental-list">&#10004; Asesoría de turismo y otros al extranjero, turista y hermano lejano.</li>
+                            <li class="rental-list"><a href="https://www.facebook.com/groups/1839136963119337/?ref=share" style="max-width: 100%; word-wrap: break-word;" class="text-primary">https://www.facebook.com/shalomrentacar</a></li>
+                            <li class="rental-list">&#10004; Recomendaciones de hostales y hoteles como Airbnb.</li>
+                            <li class="rental-list">&#10004; Sugerencias de restaurantes y comidas y/o alimentación incluidos aquellos que comen orgánico, kosher y vegetariano.</li>
                         </ul>
                     </div>
                 </div>
-
-
-              
-
             </div>
         </div>
-
     </section>
+    
 
     <!-- faq section start  -->
     <section id="faq">
 
         <div class="container my-5 py-5 ">
-            <h2 class=" text-center">Mayor <span style="color:#024572;">Información</span> </h2>   
+         
             <div class="text-center">
-                <iconify-icon class="pe-2" icon="mdi:phone-message" style="font-size: 4em; color: #26ce21;"></iconify-icon>
-
+                <img src="images/customer-service.png" alt="Customer Service" class="mb-4" style="width: 300px;">
             </div>
 
 
@@ -964,12 +1098,22 @@
                     </h5>
                     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
                         <div class="accordion-body">
-                            <p> Nosotros estamos enfocados en ofrecer el mejor servicio por lo que siempre buscamos
-                                 que el cliente se sienta bien buscando adaptarnos lo mejor posible a sus necesidades y 
-                                 deseos.
-                            </p>
+                            <p>Porque nuestra misión es buscar la seguridad, tranquilidad y satisfacción en nuestros clientes desde el primer contacto hasta la devolución del vehículo.</p>
+                            <ul class="list-unstyled text-start mt-1">
+                                <li class="rental-list">&#10004; Variedad de Vehículos: Contamos con variedad de vehículos sedanes, SUV o camionetas, Pick up y microbús.</li>
+                                <li class="rental-list">&#10004;Precios Competitivos</li>
+                                <li class="rental-list">&#10004;Excelente servicio al cliente: Amabilidad, profesionalismo, rapidez, puntualidad, resolución de problemas inmediata y eficiencia son nuestra mejor carta de presentación.</li>
+                                <li class="rental-list">&#10004;Entregas a domicilio para mayor comodidad y seguridad del cliente.</li>
+                                <li class="rental-list">&#10004;Unidades en excelente estado, limpieza, mantenimiento al día.</li>
+                                <li class="rental-list">&#10004;Sin complicaciones en el proceso, todo fácil y rápido.</li>
+                                <li class="rental-list">&#10004;Transparencia y honestidad con nuestros términos, condiciones y costos.</li>
+                            </ul>
+                            <div class="text-center mt-4">
+                                <img src="images/fleet-service.png" alt="Variedad de Vehículos" class="img-fluid">
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
                 <hr>
                 <div class="accordion-item mt-3">
@@ -987,6 +1131,9 @@
                                 Ofreciendo nuestros servicios a todo el país para la seguridad, comodidad y 
                                 satisfacción del cliente
                             </p>
+                            <div class="text-center mt-4">
+                                <img src="images/alcance.png" alt="Variedad de Vehículos" class="img-fluid">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1002,12 +1149,12 @@
                     <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingThree">
                         <div class="accordion-body">
-                            <p>Buscamos que el cliente se sienta cómodo en nuestras unidades, garantizando calidad y 
-                                seguridad del vehículo al mejor precio. Ademas con el mantenimiento al día de nuestros 
-                                vehículos, mantenemos nuestro entorno libre de CO2 y así mantenemos a nuestros clientes 
-                                y al medio ambiente seguros.
+                            <p>Con el mantenimiento al día de nuestros vehículos, mantenemos nuestro entorno libre de CO2 y así nos aseguramos de contribuir desde nuestro rubro al cuido del medio ambiente, por lo que cada uno de nuestros clientes recibe como cortesía una serie de instrucciones del correcto manejor de los vehículos para minimizar la contación ambiental.
 
                             </p>
+                            <div class="text-center mt-4">
+                                <img src="images/mAmbiente.jpeg" alt="Variedad de Vehículos" class="img-fluid">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1021,29 +1168,25 @@
         </div>
     </section>
 
-    <!-- call-to-action section start  -->
-    <section id="action" class="position-relative">
+    <br>
 
-        <div class="pattern-overlay pattern-right position-absolute">
-            <img src="images/call-to-action-pattern.png" alt="pattern">
-        </div>
+    <section id="action" class="position-relative py-5">
+        <div class="container">
+            <br>
+            <h2 class="text-center mb-4">Mapa</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.6685123741886!2d-89.55859192475903!3d13.978326186437618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62e9fc36ea80df%3A0xd0269c733b9b030e!2sShalom%20Rent%20a%20Car!5e0!3m2!1ses!2ssv!4v1717476159931!5m2!1ses!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        <div class="container  py-5 my-5">
-            <div class="row py-5 ">
-                <div class=" col-10 col-sm-8 col-lg-6">
-                    <h2 class="">Empieza con nosotros <span style="color:#024572;">Shalom Rent a Car.</span> </h2>
-                </div>
-                <div class=" col-lg-6">
-                    <p> Renta con nosotros el vehículo de su preferencia. Lo que debe hacer es elegir el vehículo que desea y
-                         hacer click sobre la foto del vehículo; o bien, contactarnos por cualquiera de nuestras redes sociales, facebook, instagram, tik tok o WhatsApp
-                    </p>
-                    <a href=" https://wa.me/message/VGHDMFRMHE3EG1" target="_blank" class="btn btn-primary mt-2">Contactanos </a>
+                    </div>
+                    <br>
                 </div>
             </div>
-
         </div>
-
     </section>
+
+
 
     <!-- Footer Section Starts -->
     <section id="footer">
@@ -1081,13 +1224,20 @@
                             <a class="nav-link px-4" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item me-2 mb-3">
-                            <a class="nav-link px-4" href="#sobreNosotros">Sobre Nosotros</a>
+                            <a class="nav-link px-4" href="#renquisitos">Requisitos</a>
                         </li>
                         <li class="nav-item me-2 mb-3">
                             <a class="nav-link px-4" href="#rental">Vehiculos</a>
                         </li>
                         <li class="nav-item me-2 mb-3">
+                            <a class="nav-link px-4" href="#sobreNosotros">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item me-2 mb-3">
                             <a class="nav-link px-4" href="#services">Servicios</a>
+                        </li>
+              
+                        <li class="nav-item me-2 mb-3">
+                            <a class="nav-link px-4" href="#action">Contacto</a>
                         </li>
                       
                     </ul>

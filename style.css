@@ -18,6 +18,241 @@ This is main CSS file that contains custom style rules used in this template
 
 /** Base Styles
 --------------------------------------------------------------*/
+
+
+#hero {
+  height: 100vh; /* Asegura que la sección cubra toda la altura de la ventana */
+}
+
+#hero .pattern-overlay {
+  z-index: 2; /* Coloca los patrones por encima de la imagen de fondo */
+}
+
+.hero-content {
+  z-index: 3; /* Coloca el contenido por encima de los patrones y la imagen de fondo */
+}
+
+#hero img.w-100.h-100 {
+  object-fit: cover; /* Hace que la imagen cubra todo el área */
+}
+
+
+
+/* PROCESS SECTION */
+
+#process {
+  height: 100vh; /* Asegura que la sección cubra toda la altura de la ventana */
+  position: relative;
+  overflow: hidden;
+}
+
+#process img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el área */
+  z-index: 1; /* Coloca la imagen detrás del contenido */
+}
+
+#process .overlay {
+  z-index: 2; /* Coloca el contenido por encima de la imagen */
+}
+
+#process .container {
+  background: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente para destacar el texto */
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+#process h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+#process .bullet {
+  width: 15px;
+  height: 15px;
+  background-color: #024572;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+#process h5 {
+  margin-top: 1.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+#process p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 767px) {
+  #process .row {
+      text-align: center;
+  }
+  #process .col-lg-3 {
+      margin-bottom: 2rem;
+  }
+  #process .container {
+      padding: 1rem; 
+  }
+}
+
+
+
+
+#renquisitos {
+  background-color: #f8f9fa;
+}
+
+#renquisitos h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+#renquisitos img {
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+}
+
+#renquisitos .rental-list {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333; 
+  padding-left: 0; 
+}
+
+#renquisitos .rental-list li {
+  margin-bottom: 0.75rem;
+}
+
+#renquisitos .rental-list li::before {
+  content: "\2714"; 
+  color: #024572; 
+  margin-right: 10px;
+}
+
+@media (max-width: 991px) {
+  #renquisitos .col-lg-6 {
+      text-align: center;
+  }
+  #renquisitos .rental-list {
+      text-align: left;
+  }
+}
+
+
+#formasPago{
+  background-color: #f8f9fa;
+}
+
+#formasPago img {
+  max-width: 100%;
+  height: auto;
+}
+.payment-image {
+  max-height: 150px; 
+  width: auto;
+  display: block;
+  margin: 0 auto; 
+}
+
+@media (max-width: 767px) {
+  .text-md-start {
+      text-align: center !important;
+  }
+  .align-items-md-start {
+      align-items: center !important;
+  }
+  .d-md-inline-block {
+      display: block !important;
+      margin-top: 1rem;
+  }
+}
+
+
+
+#testimonial {
+  position: relative;
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+#testimonial .pattern-overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.testimonial-swiper {
+  position: relative;
+  width: 100%;
+}
+
+.testimonial-icon {
+  font-size: 3rem;
+  color: #024572;
+  margin-bottom: 20px;
+}
+
+.testimonial-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.testimonial-photo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.testimonial-text {
+  margin-left: 20px;
+}
+
+.stars img {
+  width: 20px;
+  height: 20px;
+}
+
+.testimonial-paragraph {
+  margin: 20px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  .testimonial-content {
+      flex-direction: column;
+      text-align: center;
+  }
+  .testimonial-text {
+      margin-left: 0;
+      margin-top: 20px;
+  }
+}
+
+
+
+#service-2{
+
+  background-color: #f8f9fa;
+}
+
 :root {
   --accent-color: #024572;
   --secondary-color: #79A6DE;
@@ -410,25 +645,38 @@ section#hero {
 
 
 /*---- search section style start ----*/
-.search-block {
-  background-color: #FFFFFF;
-  border: 1px solid #FAFAFA;
-  box-shadow: 0px 12px 90px rgba(12, 12, 12, 0.06);
-  border-radius: 9px;
-  position: relative;
-  overflow: hidden;
-  padding: 10px;
-  width: 80%;
-  margin-top: 20px; 
-  margin-bottom: 20px; 
+#search {
+  background-color: #f8f9fa; /* Fondo claro para la sección */
+  padding: 3rem 0; /* Espaciado superior e inferior */
 }
 
-.search-block img.background-image {
-  width: 100%; 
-  height: auto; 
-  display: block;
-  margin: 0 auto; 
+#search h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
+
+#search .search-block {
+  max-width: 800px; /* Ancho máximo para centrar el contenido */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto para mejor legibilidad */
+  line-height: 1.6; /* Espaciado entre líneas */
+}
+
+#search p {
+  margin: 0;
+}
+
+#search img {
+  max-width: 100%; /* Asegura que las imágenes no excedan el ancho de su contenedor */
+  height: auto; /* Mantiene la proporción de las imágenes */
+  border-radius: 8px; /* Bordes redondeados para un aspecto más suave */
+}
+
+#search .row {
+  justify-content: center; /* Centra el contenido de las columnas */
+}
+
+
 
 /* Media query para pantallas más grandes */
 @media screen and (min-width: 768px) {
@@ -578,34 +826,6 @@ img.card-img-top {
 }
 
 
-/*---- testimonial section style start ----*/
-section#testimonial {
-  background: var(--background-color);
-}
-
-.testimonial-icon {
-  font-size: 127px;
-  color: #024572;
-}
-
-.testimonial-paragraph {
-  font-size: 31px;
-  line-height: 146%;
-}
-
-@media only screen and (max-width: 768px) {
-  .testimonial-icon {
-    font-size: 100px;
-    color: #024572;
-  }
-
-  .testimonial-paragraph {
-    font-size: 20px;
-    line-height: 146%;
-  }
-}
-
-
 /* swiper overide 
 --------------------------------------------------------------*/
 .swiper-horizontal>.swiper-pagination-bullets,
@@ -717,6 +937,16 @@ section#services {
   margin-top: -150px;
 }
 
+.rental-list {
+  padding-left: 1.5rem; /* Ajusta el padding si es necesario */
+}
+
+/* Responsivo */
+@media (max-width: 767px) {
+  .services-components {
+      margin-bottom: 1rem;
+  }
+}
 
 
 
@@ -751,6 +981,14 @@ section#services {
 
 
 
+.accordion-body img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+
 /*---- blog section style start ----*/
 a.blog-title {
   font-family: var(--sub-heading-font);
@@ -771,6 +1009,43 @@ a.blog-title:hover {
 /*---- call-to-action section style start ----*/
 section#action {
   background: var(--background-color);
+}
+
+
+#action {
+  padding: 2rem 0;
+}
+
+#action .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#action h2 {
+  font-size: 2rem;
+  color: #024572;
+  margin-bottom: 1.5rem;
+}
+
+.map-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
 }
 
 
