@@ -1,5 +1,16 @@
 {
   "projects": {
     "default": "shalomrentacar-fd7c6"
-  }
+  },
+  "targets": {
+    "shalomrentacar-fd7c6": {
+      "hosting": {
+        "default": [
+          "shalomrentacar-fd7c6"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
