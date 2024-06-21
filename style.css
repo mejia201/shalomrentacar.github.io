@@ -625,10 +625,15 @@ Index page style start
 
 /*---- navigation section style start ----*/
 
-nav.navbar {
+.navbar {
   background: var(--white-color);
-  z-index: 9999999;
+  z-index: 1000; /* Z-index alto para que la navbar esté sobre otros elementos */
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
+
+
 
 a.nav-link,
 .nav-button {
@@ -1025,6 +1030,8 @@ section#services {
       margin-bottom: 1rem;
   }
 }
+
+
 
 
 
