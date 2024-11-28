@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "shalomrentacar-fd7c6",
     "public": "./",
     "ignore": [
       "firebase.json",
