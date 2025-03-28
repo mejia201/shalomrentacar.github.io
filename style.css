@@ -1091,10 +1091,19 @@ a.blog-title:hover {
 
 
 
-/*---- call-to-action section style start ----*/
-section#action {
+section#politicas {
   background: var(--background-color);
 }
+
+section#video {
+  background:  var(--background-color);
+}
+
+
+section#footer {
+  background: var(--background-color);
+}
+/*---- call-to-action section style start ----*/
 
 
 #action {
@@ -1191,4 +1200,36 @@ iconify-icon.property-icon {
   color: var(--body-text-color);
   font-size: 30px;
 
+}
+
+
+  /* Ajusta el tamaño de las imágenes para que se vean proporcionadas */
+  .d-flex.gap-3 #img-novedades {
+    width: 200px; /* Tamaño equilibrado */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #024572; /* Borde de color */
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s ease-in-out;
+}
+
+ /* Efecto hover */
+ .styled-img:hover  #img-novedades{
+  transform: scale(1.05); /* Aumenta un poco de tamaño */
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+    .d-flex.gap-3 img {
+        width: 140px; /* Reduce el tamaño en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .d-flex.gap-3 {
+        flex-direction: column; /* Apila las imágenes en pantallas muy pequeñas */
+        align-items: center;
+    }
+    .d-flex.gap-3 img {
+        width: 160px; /* Tamaño óptimo para pantallas muy pequeñas */
+    }
 }
